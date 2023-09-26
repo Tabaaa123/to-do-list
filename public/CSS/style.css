@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #EADBC8 10%, #DAC0A3 100%);
+    background-repeat: no-repeat;
+    color: #202842;
+}
+
+ul li {
+    list-style: none;
+    font-size: 30px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #E7CEA6;
+    box-shadow: 5px 5px 5px 0 gray;
+    border: none;
+    font-size: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 605px;
+    background: #F5EFE7;
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    box-shadow: 5px 10px 5px 0 gray;
+}
+
+header,
+.content :where(i, p, span) {
+    color: #202842;
+}
+
+.wrapper header {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .content {
+    margin: 20px 0;
+}
+
+.content .quote-area {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i {
+    font-size: 20px;
+}
+
+.quote-area i:first-child {
+    margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child {
+    display: flex;
+    margin: 0 0 3px 10px;
+    align-items: flex-end;
+}
+
+.quote-area .quote {
+    font-size: 27px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author {
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+    justify-content: flex-end;
+}
+
+.author span:first-child {
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+#text{
+    border: 2px solid #DAC0A3;
+    height: 37px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#checklist{
+width: 20px;
+height: 20px;
+overflow: hidden;
+font-size: 20px;
+}

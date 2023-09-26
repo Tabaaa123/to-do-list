@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- <h1>Today is <%=myDay%>!</h1>
+    <h1>It's weekday!</h1>
+    <h2>Get up and code</h2>
+    <ul>
+        <li>Breakfast</li>
+        <li>Take a bath</li>
+        <li>Drive to supermarket</li>
+        <% for (let i=0; i <addedItem.length; i++){%>
+            <li><%=addedItem [i] %></li>
+            <% } %>
+    </ul>
+    <h2>Add a New Item:</h2>
+    <form method="POST" action="">
+        <input type="text" name="addItem" placeholder="Enter your activity">
+        <button type="submit" name="button">Add</button>
+    </form> -->
+    <div class="wrapper">
+        <header>Quote of the Day</header>
+        <div class="content">
+            <div class="quote-area">
+                <i class="fas fa-quote-left"></i>
+                <p class="quote">Never give up because you never know if the next try is going to be the one that works.
+                </p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="author">
+                <span>__</span>
+                <span class="name">Mary Kay Ash</span>
+            </div>
+        </div>
+        <h1>Today is <%= myDay %></h1><br>
+        <p> <i>Few Reminders:</i> </p><br>
+        <ul>
+            <!-- <li> <%= addedItem %> </li> -->
+            <% for (let i=0; i<addedItem.length; i++) { %>
+                <li><input type="checkbox" name="list" id="checklist">
+                    <%= addedItem [i] %>
+                </li>
+                <% } %>
+        </ul>
+        <form action="/" method="post">
+            <input type="text" id="text" name="addItem" placeholder="Add more task">
+            <label for=""></label>
+            <button type="submit" name="button">Add</button>
+        </form>
+    </div><br>
+
+
+</body>
+
+</html>
